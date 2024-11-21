@@ -8,3 +8,4 @@ data class DataSiswa(
     val email: String = "",
     val notelpon : String = "",
 )
+
