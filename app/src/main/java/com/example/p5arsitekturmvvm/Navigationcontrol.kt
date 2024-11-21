@@ -25,6 +25,14 @@ fun NavigationControl(
     viewModel: SiswaViewModel = viewModel(),
     navHost: NavHostController = rememberNavController()
 ) {
+    val uiState by viewModel.statusUI.collectAsState()
 
+    NavHost(
+        modifier = modifier,
+        navController = navHost,
+        startDestination = Halaman.FORMULIR.name
+    ) {
+
+    }
 }
 
