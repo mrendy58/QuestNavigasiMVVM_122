@@ -53,6 +53,21 @@ fun TampilData(
     param: String,
     argu: String
 ) {
+    Column(
+        modifier = Modifier
+            .padding(vertical = 16.dp),
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
 
+            Text(text = "$param:",
+            )
+            Text(
+                text = argu,
+            )
+        }
+    }
 }
 
